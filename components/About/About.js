@@ -7,7 +7,6 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
-import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './about-style';
 import userImage from '~/public/images/p.jpg';

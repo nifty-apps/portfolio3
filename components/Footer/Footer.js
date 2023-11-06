@@ -64,13 +64,13 @@ function Footer() {
                   <Typography className={text.paragraph}>
                     {t('unisex-landing.footer_contact')}
                     <br />
-                    +12 345 678 90
+                    +880 152 1227 899
                   </Typography>
                   <Divider className={classes.divider} />
                   <Typography className={text.paragraph}>
                     {t('unisex-landing.footer_hello')}
                     <br />
-                    jenadoe.skype
+                    opuctg440@gmail.com
                   </Typography>
                 </div>
               </div>

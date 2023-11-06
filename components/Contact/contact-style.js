@@ -1,4 +1,5 @@
 import { makeStyles } from 'tss-react/mui';
+import { alpha } from '@mui/material/styles';
 
 const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   formWrap: {
@@ -6,6 +7,11 @@ const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   },
   formBox: {
     padding: theme.spacing(2),
+    zIndex: 1,
+    overflow: 'hidden',
+    borderRadius: theme.rounded.big,
+    background: `linear-gradient(120deg, ${alpha(theme.palette.secondary.main, 0.5)}, ${alpha(theme.palette.primary.main, 0.5)})`,
+    backdropFilter: 'saturate(180%) blur(10px)',
     [theme.breakpoints.up('sm')]: {
       padding: theme.spacing(7),
     },
