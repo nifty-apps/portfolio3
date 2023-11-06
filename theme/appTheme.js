@@ -146,6 +146,7 @@ const appTheme = (color, mode) => ({
     MuiFormLabel: {
       styleOverrides: {
         root: {
+          color: '#FFFFFF',
           '&.Mui-focused': {
             color: palette[color].palette.primary.main
           }
@@ -155,8 +156,9 @@ const appTheme = (color, mode) => ({
     MuiInput: {
       styleOverrides: {
         underline: {
+          color: '#FFFFFF',
           '&:after': {
-            borderBottomColor: palette[color].palette.primary.main
+            borderBottomColor: palette[color].palette.primary.light
           }
         }
       }
