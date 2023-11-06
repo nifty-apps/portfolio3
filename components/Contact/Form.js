@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import Snackbar from '@mui/material/Snackbar';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import { useTranslation } from 'next-i18next';
-import { useText } from '~/theme/common';
 import useStyles from './contact-style';
 
 function Form() {
-  const { classes, cx } = useStyles();
-  const { classes: text } = useText();
+  const { classes } = useStyles();
   const { t } = useTranslation('common');
   const [values, setValues] = useState({
     name: '',
