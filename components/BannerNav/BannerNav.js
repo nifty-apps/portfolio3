@@ -21,7 +21,7 @@ import useStyles from './banner-style';
 function BannerNav(props) {
   const { classes: text } = useText();
   const { classes } = useStyles();
-  const [bannerHero] = useState('animation');
+  const [bannerHero] = useState('slideshow');
   const isTablet = useMediaQuery(theme => theme.breakpoints.down('lg'));
   const isMobile = useMediaQuery(theme => theme.breakpoints.down('md'));
 
@@ -46,11 +46,11 @@ function BannerNav(props) {
           <div className={classes.banner}>
             <div className={classes.cover}>
               <div className={classes.figure}>
-                { bannerHero === 'image' && <div className={classes.img} style={{ backgroundImage: `url(${brand.unisex.cover})` }} /> }
-                { bannerHero === 'video' && <VideoHero /> }
-                { bannerHero === 'animation' && <Animation /> }
-                { bannerHero === 'animation-slide' && <AnimationSlideshow /> }
-                { bannerHero === 'slideshow' && <Slideshow /> }
+                {bannerHero === 'image' && <div className={classes.img} style={{ backgroundImage: `url(${brand.unisex.cover})` }} />}
+                {bannerHero === 'video' && <VideoHero />}
+                {bannerHero === 'animation' && <Animation />}
+                {bannerHero === 'animation-slide' && <AnimationSlideshow />}
+                {bannerHero === 'slideshow' && <Slideshow />}
               </div>
             </div>
             {!isTablet && (

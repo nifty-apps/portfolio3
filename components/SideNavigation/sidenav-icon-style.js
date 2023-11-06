@@ -8,7 +8,7 @@ const sideNavIconStyles = makeStyles({ uniqId: 'sidenav' })((theme, _params, cla
     position: 'relative',
     textAlign: 'center',
     '& img': {
-      width: '100%',
+      width: '50%',
       height: 59
     }
   },
