@@ -10,6 +10,7 @@ import { useTranslation } from 'next-i18next';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './about-style';
+import userImage from '~/public/images/p.jpg';
 
 function About() {
   const theme = useTheme();
@@ -72,7 +73,7 @@ function About() {
               )}
               <Paper className={classes.photo}>
                 <figure>
-                  <img src={brand.unisex.avatar} alt="avatar" />
+                  <img src={userImage} alt="avatar" />
                 </figure>
                 <span className={classes.frame} />
               </Paper>

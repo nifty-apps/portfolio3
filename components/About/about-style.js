@@ -96,7 +96,7 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
   photo: {
     position: 'relative',
     marginTop: -140,
-    background: theme.palette.common.white,
+    background: theme.palette.common.black,
     width: 270,
     height: 335,
     zIndex: 1,

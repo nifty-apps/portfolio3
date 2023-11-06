@@ -29,7 +29,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   unisex: [
-    'https://via.placeholder.com/271x400/4600a5/FFFFFF',
+    'https://avatars.githubusercontent.com/u/90123719?v=4',
     'https://via.placeholder.com/1300x500/2b1477/FFFFFF',
     'https://via.placeholder.com/1300x500/601477/FFFFFF',
     'https://via.placeholder.com/1300x500/143277/FFFFFF',

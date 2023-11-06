@@ -59,13 +59,10 @@ function BannerNav(props) {
               </div>
             )}
             <div className={classes.text}>
-              <Typography variant="h4" className={text.title2}>
-                {t('unisex-landing.banner_greeting')}
-                ,
-              </Typography>
               <Typography variant="h2" className={text.title}>
-                {t('unisex-landing.banner_me')}
-                &nbsp;James,&nbsp;
+                {brand.unisex.name}
+              </Typography>
+              <Typography variant="h4" className={text.title2}>
                 {brand.unisex.title}
               </Typography>
               {!isMobile && (
