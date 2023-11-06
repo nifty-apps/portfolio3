@@ -50,13 +50,13 @@ function Form() {
       />
       <Paper className={classes.formBox}>
         <Grid container spacing={6}>
-          <Grid item lg={5} xs={12}>
+          {/* <Grid item lg={5} xs={12}>
             <Typography className={cx(classes.title, text.title)} variant="h3">
               Contact&nbsp;
               <span>Me.</span>
             </Typography>
-          </Grid>
-          <Grid item lg={7} xs={12}>
+          </Grid> */}
+          <Grid item lg={12} xs={12}>
             <div className={classes.form}>
               <ValidatorForm
                 onSubmit={handleSubmit}

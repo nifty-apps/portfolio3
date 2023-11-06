@@ -16,9 +16,6 @@ const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   },
   title: {
     textAlign: 'left',
-    '& span': {
-      display: 'block',
-    },
     [theme.breakpoints.down('sm')]: {
       top: theme.spacing(3),
       position: 'relative'
