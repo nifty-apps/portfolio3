@@ -54,9 +54,9 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Creative Director</Typography>
-                        <Typography gutterBottom>at Fourth Company</Typography>
-                        <Typography className={classes.time}>2015 - Present</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>React JS Developer (Intern)</Typography>
+                        <Typography gutterBottom>Nifty IT Sollutions</Typography>
+                        <Typography className={classes.time}>September 2023 - Present</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -69,9 +69,9 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Senior UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Third Company</Typography>
-                        <Typography className={classes.time}>2013 - 2015</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>WEB Instructor</Typography>
+                        <Typography gutterBottom>Institute of Freelancing</Typography>
+                        <Typography className={classes.time}>June 2023 - Present</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -84,9 +84,13 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Second Company</Typography>
-                        <Typography className={classes.time}>2012 - 2013</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>
+                          Teaching Assistant
+                          <br />
+                          (Computer Security)
+                        </Typography>
+                        <Typography gutterBottom>International Islamic University, Chittagong</Typography>
+                        {/* <Typography className={classes.time}>2012 - 2013</Typography> */}
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -99,9 +103,13 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at First Company</Typography>
-                        <Typography className={classes.time}>2009 - 2011</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>
+                          Teaching Assistant
+                          <br />
+                          (Web Tools & Technology)
+                        </Typography>
+                        <Typography gutterBottom>International Islamic University, Chittagong</Typography>
+                        {/* <Typography className={classes.time}>2009 - 2011</Typography> */}
                       </div>
                     </ScrollAnimation>
                   </li>
