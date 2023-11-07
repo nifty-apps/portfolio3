@@ -35,15 +35,10 @@ const imgAPI = {
     '/images/banner/banner3.png',
     '/images/banner/banner4.png',
     '/images/banner/banner5.png',
-    'https://via.placeholder.com/640x440/5216db/FFFFFF',
-    'https://via.placeholder.com/640x800/0e9095/FFFFFF',
-    'https://via.placeholder.com/640x400/db1653/FFFFFF',
-    'https://via.placeholder.com/640x959/cc16db/FFFFFF',
-    'https://via.placeholder.com/640x405/5216db/FFFFFF',
-    'https://via.placeholder.com/640x360/db1653/FFFFFF',
-    'https://via.placeholder.com/640x400/cc16db/FFFFFF',
-    'https://via.placeholder.com/640x960/143277/FFFFFF',
-    'https://via.placeholder.com/640x427/4600a5/FFFFFF',
+    '/images/assets/portfolio-img1.jpg',
+    '/images/assets/portfolio-img2.jpg',
+    '/images/assets/portfolio-img3.jpg',
+    '/images/assets/portfolio-img4.jpg',
   ]
 };
 

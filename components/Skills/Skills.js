@@ -45,7 +45,7 @@ function Skills() {
                 <ul>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-ios-color-wand" />
+                      <i className="ion-logo-html5" />
                       <Typography variant="h6" className={text.subtitle2}>HTML</Typography>
                     </div>
                     <LinearProgress
@@ -59,7 +59,7 @@ function Skills() {
                   </li>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-logo-dribbble" />
+                      <i className="ion-logo-css3" />
                       <Typography variant="h6" className={text.subtitle2}>CSS</Typography>
                     </div>
                     <LinearProgress
@@ -73,7 +73,7 @@ function Skills() {
                   </li>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-ios-globe" />
+                      <i className="ion-logo-javascript" />
                       <Typography variant="h6" className={text.subtitle2}>Javascript</Typography>
                     </div>
                     <LinearProgress
@@ -133,7 +133,7 @@ function Skills() {
                   </li>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-logo-dribbble" />
+                      <i className="ion-logo-nodejs" />
                       <Typography variant="h6" className={text.subtitle2}>Node JS</Typography>
                     </div>
                     <LinearProgress

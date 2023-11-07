@@ -16,65 +16,79 @@ const portfolio = [
   {
     img: imgAPI.unisex[6],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
+    link: 'https://mpairtech.netlify.app/',
+    size: '',
     category: 'cat1'
+  },
+  {
+    img: imgAPI.unisex[6],
+    title: 'Aenean facilisis vitae purus',
+    link: 'https://boutiquin.netlify.app/',
+    size: '',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.unisex[6],
+    title: 'Aenean facilisis vitae purus',
+    link: 'https://rick-and-morty-byopu.netlify.app/',
+    size: '',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.unisex[6],
+    title: 'Aenean facilisis vitae purus',
+    link: 'https://aktheruzzaman.netlify.app/',
+    size: '',
+    category: 'cat2'
   },
   {
     img: imgAPI.unisex[7],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
+    link: 'https://aktheruzzaman.netlify.app/',
+    size: '',
     category: 'cat2'
   },
   {
     img: imgAPI.unisex[8],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
+    link: 'https://aktheruzzaman.netlify.app/',
+    size: '',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.unisex[9],
+    title: 'Aenean facilisis vitae purus',
+    link: 'https://aktheruzzaman.netlify.app/',
+    size: '',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.unisex[9],
+    title: 'Aenean facilisis vitae purus',
+    link: 'https://chimerical-duckanoo-3318f5.netlify.app/',
+    size: '',
     category: 'cat3'
   },
   {
     img: imgAPI.unisex[9],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.unisex[10],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.unisex[11],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
+    link: 'https://exquisite-florentine-1551bd.netlify.app/',
+    size: '',
     category: 'cat3'
   },
   {
-    img: imgAPI.unisex[12],
+    img: imgAPI.unisex[9],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat1'
+    link: 'https://superlative-praline-2301ba.netlify.app/',
+    size: '',
+    category: 'cat3'
   },
   {
-    img: imgAPI.unisex[14],
+    img: imgAPI.unisex[9],
     title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.unisex[13],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
+    link: 'https://cute-pithivier-1d029a.netlify.app/',
+    size: '',
+    category: 'cat3'
   },
 ];
 
@@ -160,31 +174,13 @@ function Gallery() {
             onClick={() => filterChildren('cat1')}
             className={filter === 'cat1' ? classes.selected : ''}
           >
-            Category 1
+            Front-End
           </Button>
           <Button
             onClick={() => filterChildren('cat2')}
             className={filter === 'cat2' ? classes.selected : ''}
           >
-            Category 2
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat3')}
-            className={filter === 'cat3' ? classes.selected : ''}
-          >
-            Category 3
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat4')}
-            className={filter === 'cat4' ? classes.selected : ''}
-          >
-            Category 4
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat5')}
-            className={filter === 'cat5' ? classes.selected : ''}
-          >
-            Category 5
+            Full-Stack
           </Button>
         </div>
         {!isMobile ? (

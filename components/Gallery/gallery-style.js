@@ -32,7 +32,7 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
     }
   },
   massonry: {
-    columns: `${3} 300px`,
+    columns: `${2} 300px`,
     columnGap: theme.spacing(4),
   },
   item: {
