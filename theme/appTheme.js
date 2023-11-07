@@ -123,6 +123,11 @@ const appTheme = (color, mode) => ({
           color: '#FFFFFF',
           boxShadow: `0 0 4px -1px ${palette[color].palette.primary.main}`
         },
+        containedInfo: {
+          backgroundColor: palette[color].palette.primary.main,
+          color: '#FFFFFF',
+          boxShadow: `0 0 4px -1px ${palette[color].palette.primary.main}`
+        },
         root: {
           fontWeight: 600,
           padding: '8px 24px',
