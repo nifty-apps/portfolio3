@@ -22,6 +22,7 @@ import Footer from '~/components/Footer';
 import PageNav from '~/components/PageNav';
 import Decoration from '~/components/Parallax/Decoration';
 import Notification from '~/components/Notification';
+import Skills from '../../components/Skills';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
@@ -78,7 +79,7 @@ function Landing(props) {
     <React.Fragment>
       <Head>
         <title>
-          { brand.unisex.name + ' - Profile' }
+          {brand.unisex.name + ' - Profile'}
         </title>
       </Head>
       <CssBaseline />
@@ -98,6 +99,7 @@ function Landing(props) {
           <About />
           <Timeline />
           <Counter />
+          <Skills />
         </section>
         <div className={classes.greyBg}>
           <div className={classes.parallaxWrap}>

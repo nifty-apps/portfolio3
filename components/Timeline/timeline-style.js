@@ -32,6 +32,13 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
   title: {
     textTransform: 'uppercase',
     marginBottom: theme.spacing(3),
+    color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.primary.main
+  },
+  title2: {
+    textTransform: 'uppercase',
+    marginTop: theme.spacing(2.8),
+    marginBottom: theme.spacing(3),
+    color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.primary.main
   },
   time: {},
   history: {
