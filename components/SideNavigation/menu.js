@@ -3,8 +3,8 @@ const menu = [
   'services',
   'my-work',
   'testimonials',
-  'blog',
   'contact',
+  // 'blog',
 ];
 
 export default menu;

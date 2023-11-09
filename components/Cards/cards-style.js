@@ -103,19 +103,19 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
       position: 'relative',
       margin: 0,
       overflow: 'hidden',
-      borderRadius: theme.rounded.big,
+      borderRadius: theme.rounded.medium,
     },
     [`& .${classes.img}`]: {
       display: 'block',
       width: '100%',
       height: '100%',
       backgroundSize: 'cover',
-      transform: 'scale(1.1)',
+      // transform: 'scale(1.1)',
       transition: 'transform 0.2s ease-out',
     },
     '&:hover': {
       [`& .${classes.img}`]: {
-        transform: 'scale(1)'
+        transform: 'scale(1.1)'
       },
       [`& .${classes.detail}`]: {
         opacity: 1,
@@ -139,7 +139,7 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
     backgroundSize: '300%',
     backgroundPosition: '0% 0',
     padding: theme.spacing(3),
-    borderRadius: theme.rounded.big,
+    borderRadius: theme.rounded.medium,
     color: theme.palette.common.white,
     display: 'flex',
     flexDirection: 'column',
@@ -162,7 +162,7 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
     },
   },
   short: {
-    height: 240,
+    height: 230,
     [theme.breakpoints.down('lg')]: {
       height: 210
     },

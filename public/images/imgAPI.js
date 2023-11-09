@@ -35,10 +35,18 @@ const imgAPI = {
     '/images/banner/banner3.png',
     '/images/banner/banner4.png',
     '/images/banner/banner5.png',
-    '/images/assets/portfolio-img1.jpg',
-    '/images/assets/portfolio-img2.jpg',
-    '/images/assets/portfolio-img3.jpg',
-    '/images/assets/portfolio-img4.jpg',
+  ],
+  portfolio: [
+    '/images/assets/portfolio-F22.png',
+    '/images/assets/portfolio-F33.png',
+    '/images/assets/portfolio-F4.png',
+    '/images/assets/portfolio-M11.jpg',
+    '/images/assets/portfolio-M222.png',
+    '/images/assets/portfolio-M3.jpg',
+    '/images/assets/portfolio-M5.jpg',
+    '/images/assets/portfolio-JS1.jpg',
+    '/images/assets/portfolio-JS2.png',
+    '/images/assets/portfolio-JS3.png',
   ]
 };
 

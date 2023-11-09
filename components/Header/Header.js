@@ -74,7 +74,7 @@ function Header(props) {
     createData(navMenu[2], '#' + navMenu[2]),
     createData(navMenu[3], '#' + navMenu[3], -40),
     createData(navMenu[4], '#' + navMenu[4], -40),
-    createData(navMenu[5], '#' + navMenu[5], -40),
+    // createData(navMenu[5], '#' + navMenu[5], -40),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -181,7 +181,7 @@ function Header(props) {
                         {brand.unisex.title}
                       </Typography>
                     </div>
-                    <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
+                    <Button variant="contained" color="primary" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                     <div className={classes.socmed}>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className={cx('ion-logo-facebook', classes.fb)} />

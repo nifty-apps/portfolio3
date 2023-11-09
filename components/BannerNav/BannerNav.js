@@ -71,7 +71,7 @@ function BannerNav(props) {
                     {t('unisex-landing.banner_desc')}
                   </Typography>
                   <div className={classes.socmed}>
-                    <Button variant="outlined" className={classes.download} component="a">Download CV</Button>
+                    <Button variant="outlined" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
                       <i className="ion-logo-facebook" />
                     </IconButton>

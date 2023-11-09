@@ -14,80 +14,73 @@ import useStyle from './gallery-style';
 
 const portfolio = [
   {
-    img: imgAPI.unisex[6],
+    img: imgAPI.portfolio[2],
     title: 'Aenean facilisis vitae purus',
     link: 'https://mpairtech.netlify.app/',
-    size: '',
+    size: 'short',
     category: 'cat1'
   },
   {
-    img: imgAPI.unisex[6],
-    title: 'Aenean facilisis vitae purus',
-    link: 'https://boutiquin.netlify.app/',
-    size: '',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.unisex[6],
+    img: imgAPI.portfolio[1],
     title: 'Aenean facilisis vitae purus',
     link: 'https://rick-and-morty-byopu.netlify.app/',
-    size: '',
+    size: 'long',
     category: 'cat1'
   },
   {
-    img: imgAPI.unisex[6],
+    img: imgAPI.portfolio[0],
     title: 'Aenean facilisis vitae purus',
-    link: 'https://aktheruzzaman.netlify.app/',
-    size: '',
+    link: 'https://boutiquin.netlify.app/',
+    size: 'long',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.portfolio[3],
+    title: 'Heros recipe',
+    link: 'https://project-1-34a32.web.app/',
+    size: 'long',
     category: 'cat2'
   },
   {
-    img: imgAPI.unisex[7],
+    img: imgAPI.portfolio[5],
     title: 'Aenean facilisis vitae purus',
-    link: 'https://aktheruzzaman.netlify.app/',
-    size: '',
+    link: 'https://craftopia-2b729.web.app/',
+    size: 'short',
     category: 'cat2'
   },
   {
-    img: imgAPI.unisex[8],
+    img: imgAPI.portfolio[6],
     title: 'Aenean facilisis vitae purus',
-    link: 'https://aktheruzzaman.netlify.app/',
-    size: '',
+    link: 'https://campureserve.web.app/',
+    size: 'short',
     category: 'cat2'
   },
   {
-    img: imgAPI.unisex[9],
+    img: imgAPI.portfolio[4],
     title: 'Aenean facilisis vitae purus',
-    link: 'https://aktheruzzaman.netlify.app/',
-    size: '',
+    link: 'https://tinyzoo-aec49.web.app/',
+    size: 'long',
     category: 'cat2'
   },
   {
-    img: imgAPI.unisex[9],
+    img: imgAPI.portfolio[7],
     title: 'Aenean facilisis vitae purus',
     link: 'https://chimerical-duckanoo-3318f5.netlify.app/',
-    size: '',
+    size: 'short',
     category: 'cat3'
   },
   {
-    img: imgAPI.unisex[9],
+    img: imgAPI.portfolio[8],
     title: 'Aenean facilisis vitae purus',
     link: 'https://exquisite-florentine-1551bd.netlify.app/',
-    size: '',
+    size: 'short',
     category: 'cat3'
   },
   {
-    img: imgAPI.unisex[9],
+    img: imgAPI.portfolio[9],
     title: 'Aenean facilisis vitae purus',
     link: 'https://superlative-praline-2301ba.netlify.app/',
-    size: '',
-    category: 'cat3'
-  },
-  {
-    img: imgAPI.unisex[9],
-    title: 'Aenean facilisis vitae purus',
-    link: 'https://cute-pithivier-1d029a.netlify.app/',
-    size: '',
+    size: 'short',
     category: 'cat3'
   },
 ];
@@ -181,6 +174,12 @@ function Gallery() {
             className={filter === 'cat2' ? classes.selected : ''}
           >
             Full-Stack
+          </Button>
+          <Button
+            onClick={() => filterChildren('cat3')}
+            className={filter === 'cat3' ? classes.selected : ''}
+          >
+            Javascript
           </Button>
         </div>
         {!isMobile ? (

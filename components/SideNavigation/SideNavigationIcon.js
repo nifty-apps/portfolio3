@@ -34,8 +34,8 @@ function SideNavigation() {
     createData(navMenu[1], '#' + navMenu[1], 'ion-ios-add-circle'),
     createData(navMenu[2], '#' + navMenu[2], 'ion-ios-keypad'),
     createData(navMenu[3], '#' + navMenu[3], 'ion-ios-chatboxes', -40),
-    createData(navMenu[4], '#' + navMenu[4], 'ion-ios-copy'),
-    createData(navMenu[5], '#' + navMenu[5], 'ion-ios-mail'),
+    // createData(navMenu[4], '#' + navMenu[4], 'ion-ios-copy'),
+    createData(navMenu[4], '#' + navMenu[4], 'ion-ios-mail'),
   ]);
   return (
     <div className={classes.navigation}>
