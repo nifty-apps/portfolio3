@@ -21,7 +21,7 @@ import useStyles from './banner-style';
 function BannerNav(props) {
   const { classes: text } = useText();
   const { classes } = useStyles();
-  const [bannerHero] = useState('slideshow');
+  const [bannerHero] = useState('animation-slide');
   const isTablet = useMediaQuery(theme => theme.breakpoints.down('lg'));
   const isMobile = useMediaQuery(theme => theme.breakpoints.down('md'));
 

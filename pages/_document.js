@@ -18,7 +18,7 @@ class MyDocument extends Document {
             style={{
               position: 'fixed',
               zIndex: 2001,
-              background: '#fafafa',
+              background: '#000000',
               width: '100%',
               height: '100%',
             }}
@@ -74,8 +74,8 @@ MyDocument.getInitialProps = async ctx => {
   const cache = createEmotionCache();
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
-  ctx.renderPage = () =>
-    originalRenderPage({ enhanceApp: (App) => (function EnhanceApp(props) { // eslint-disable-line
+  ctx.renderPage = () => originalRenderPage({
+    enhanceApp: (App) => (function EnhanceApp(props) { // eslint-disable-line
       return <App emotionCache={cache} {...props} />;
     }),
   });
