@@ -47,6 +47,9 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme) => ({
     },
     '& h6': {
       marginLeft: theme.spacing()
+    },
+    '& img': {
+      width: 25,
     }
   },
   progressBg: {

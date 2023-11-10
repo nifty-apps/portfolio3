@@ -184,16 +184,24 @@ function Header(props) {
                     <Button variant="contained" color="primary" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                     <div className={classes.socmed}>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-facebook', classes.fb)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-facebook', classes.fb)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-instagram', classes.ig)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-instagram', classes.ig)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-twitter', classes.tw)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-twitter', classes.tw)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-linkedin', classes.in)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-linkedin', classes.in)} />
+                        </Button>
                       </IconButton>
                     </div>
                     <div className={classes.contact}>

@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
 import useStyles from './skills-style';
+import imgAPI from '~/public/images/imgAPI';
 
 function Skills() {
   const { classes, cx } = useStyles();
@@ -45,50 +46,8 @@ function Skills() {
                 <ul>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-logo-html5" />
+                      <img src={imgAPI.skills[0]} alt="badge" />
                       <Typography variant="h6" className={text.subtitle2}>HTML</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 80 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-logo-css3" />
-                      <Typography variant="h6" className={text.subtitle2}>CSS</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 70 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-logo-javascript" />
-                      <Typography variant="h6" className={text.subtitle2}>Javascript</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 60 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-ios-camera" />
-                      <Typography variant="h6" className={text.subtitle2}>Typescript</Typography>
                     </div>
                     <LinearProgress
                       variant="determinate"
@@ -101,12 +60,68 @@ function Skills() {
                   </li>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-ios-snow" />
+                      <img src={imgAPI.skills[1]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Javascript</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 89 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[2]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>React JS</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 85 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[3]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Node JS</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 72 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[4]} alt="badge" />
                       <Typography variant="h6" className={text.subtitle2}>GraphQL</Typography>
                     </div>
                     <LinearProgress
                       variant="determinate"
-                      value={play ? 80 : 0}
+                      value={play ? 65 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[5]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>MySQL</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 70 : 0}
                       classes={{
                         root: classes.progressBg,
                         bar: classes.bar
@@ -119,50 +134,8 @@ function Skills() {
                 <ul>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-ios-color-wand" />
-                      <Typography variant="h6" className={text.subtitle2}>React JS</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 80 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-logo-nodejs" />
-                      <Typography variant="h6" className={text.subtitle2}>Node JS</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 70 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-ios-globe" />
-                      <Typography variant="h6" className={text.subtitle2}>Express JS</Typography>
-                    </div>
-                    <LinearProgress
-                      variant="determinate"
-                      value={play ? 60 : 0}
-                      classes={{
-                        root: classes.progressBg,
-                        bar: classes.bar
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <div className={classes.textIcon}>
-                      <i className="ion-ios-camera" />
-                      <Typography variant="h6" className={text.subtitle2}>Next JS</Typography>
+                      <img src={imgAPI.skills[6]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>CSS</Typography>
                     </div>
                     <LinearProgress
                       variant="determinate"
@@ -175,12 +148,68 @@ function Skills() {
                   </li>
                   <li>
                     <div className={classes.textIcon}>
-                      <i className="ion-ios-snow" />
+                      <img src={imgAPI.skills[7]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Typescript</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 84 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[8]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Next JS</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 61 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[9]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Express JS</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 75 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[10]} alt="badge" />
                       <Typography variant="h6" className={text.subtitle2}>MonoDB</Typography>
                     </div>
                     <LinearProgress
                       variant="determinate"
-                      value={play ? 80 : 0}
+                      value={play ? 78 : 0}
+                      classes={{
+                        root: classes.progressBg,
+                        bar: classes.bar
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <div className={classes.textIcon}>
+                      <img src={imgAPI.skills[11]} alt="badge" />
+                      <Typography variant="h6" className={text.subtitle2}>Redux</Typography>
+                    </div>
+                    <LinearProgress
+                      variant="determinate"
+                      value={play ? 75 : 0}
                       classes={{
                         root: classes.progressBg,
                         bar: classes.bar

@@ -48,16 +48,24 @@ function Footer() {
                 <Button variant="outlined" color="primary" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                 <div className={classes.socmed}>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-facebook" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-facebook" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-instagram" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-instagram" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-twitter" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-twitter" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-linkedin" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-linkedin" />
+                    </Button>
                   </IconButton>
                 </div>
                 <div className={classes.contact}>

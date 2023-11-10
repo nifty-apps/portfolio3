@@ -47,6 +47,20 @@ const imgAPI = {
     '/images/assets/portfolio-JS1.jpg',
     '/images/assets/portfolio-JS2.png',
     '/images/assets/portfolio-JS3.png',
+  ],
+  skills: [
+    '/images/skills/html.png',
+    '/images/skills/javascript.png',
+    '/images/skills/react.png',
+    '/images/skills/node.png',
+    '/images/skills/graphql.png',
+    '/images/skills/mysql.png',
+    '/images/skills/css.png',
+    '/images/skills/typescript.png',
+    '/images/skills/next.png',
+    '/images/skills/expressjs.png',
+    '/images/skills/mongo.png',
+    '/images/skills/redux.png',
   ]
 };
 
