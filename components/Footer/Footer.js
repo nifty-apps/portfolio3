@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/unisex-logo.svg';
+import logo from '~/public/images/AK_logo.png';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './footer-style';
@@ -45,32 +45,40 @@ function Footer() {
                     {brand.unisex.title}
                   </Typography>
                 </div>
-                <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
+                <Button variant="outlined" color="primary" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                 <div className={classes.socmed}>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-facebook" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-facebook" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-instagram" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-instagram" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-twitter" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-twitter" />
+                    </Button>
                   </IconButton>
                   <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className="ion-logo-linkedin" />
+                    <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                      <i className="ion-logo-linkedin" />
+                    </Button>
                   </IconButton>
                 </div>
                 <div className={classes.contact}>
                   <Typography className={text.paragraph}>
                     {t('unisex-landing.footer_contact')}
                     <br />
-                    +12 345 678 90
+                    +880 152 1227 899
                   </Typography>
                   <Divider className={classes.divider} />
                   <Typography className={text.paragraph}>
                     {t('unisex-landing.footer_hello')}
                     <br />
-                    jenadoe.skype
+                    opuctg440@gmail.com
                   </Typography>
                 </div>
               </div>

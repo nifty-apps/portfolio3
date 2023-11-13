@@ -123,6 +123,11 @@ const appTheme = (color, mode) => ({
           color: '#FFFFFF',
           boxShadow: `0 0 4px -1px ${palette[color].palette.primary.main}`
         },
+        containedInfo: {
+          backgroundColor: palette[color].palette.primary.main,
+          color: '#FFFFFF',
+          boxShadow: `0 0 4px -1px ${palette[color].palette.primary.main}`
+        },
         root: {
           fontWeight: 600,
           padding: '8px 24px',
@@ -146,6 +151,7 @@ const appTheme = (color, mode) => ({
     MuiFormLabel: {
       styleOverrides: {
         root: {
+          color: '#FFFFFF',
           '&.Mui-focused': {
             color: palette[color].palette.primary.main
           }
@@ -155,8 +161,9 @@ const appTheme = (color, mode) => ({
     MuiInput: {
       styleOverrides: {
         underline: {
+          color: '#FFFFFF',
           '&:after': {
-            borderBottomColor: palette[color].palette.primary.main
+            borderBottomColor: palette[color].palette.primary.light
           }
         }
       }

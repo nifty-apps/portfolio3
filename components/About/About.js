@@ -7,9 +7,9 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
-import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './about-style';
+import userImage from '~/public/images/p.jpg';
 
 function About() {
   const theme = useTheme();
@@ -27,26 +27,27 @@ function About() {
           <Grid item lg={9} xs={12}>
             <div className={classes.about}>
               <div className={classes.reward}>
+                {!isMobile && <div className={classes.item} />}
                 <div className={classes.item}>
                   <figure>
-                    <img src="/images/unisex/reward1.svg" alt="badge" />
+                    <img src="/images/unisex/r1.png" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>Special Mention</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Awards</Typography>
+                  <Typography component="p" className={text.paragraph}>Black-belt</Typography>
+                  <Typography variant="h5" className={text.subtitle2}>PHero</Typography>
                 </div>
                 <div className={classes.item}>
                   <figure>
-                    <img src="/images/unisex/reward2.svg" alt="badge" />
+                    <img src="/images/unisex/r2.jpg" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>100k videos</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Subscriber</Typography>
+                  <Typography component="p" className={text.paragraph}>End-Gamer</Typography>
+                  <Typography variant="h5" className={text.subtitle2}>PHero</Typography>
                 </div>
                 <div className={classes.item}>
                   <figure>
-                    <img src="/images/unisex/reward3.svg" alt="badge" />
+                    <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>Best Filmography</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Footage</Typography>
+                  <Typography component="p" className={text.paragraph}>Pull Shark</Typography>
+                  <Typography variant="h5" className={text.subtitle2}>Github</Typography>
                 </div>
               </div>
               {!isDesktop && (
@@ -72,7 +73,7 @@ function About() {
               )}
               <Paper className={classes.photo}>
                 <figure>
-                  <img src={brand.unisex.avatar} alt="avatar" />
+                  <img src={userImage} alt="avatar" />
                 </figure>
                 <span className={classes.frame} />
               </Paper>

@@ -47,7 +47,7 @@ function PageNav() {
     createData(3, navMenu[2], '#' + navMenu[2].replace(/ /g, '_')),
     createData(4, navMenu[3], '#' + navMenu[3].replace(/ /g, '_')),
     createData(4, navMenu[4], '#' + navMenu[4].replace(/ /g, '_')),
-    createData(4, navMenu[5], '#' + navMenu[5].replace(/ /g, '_')),
+    // createData(4, navMenu[5], '#' + navMenu[5].replace(/ /g, '_')),
   ]);
 
   return (
@@ -57,7 +57,7 @@ function PageNav() {
           items={navMenu}
           currentClassName="active"
         >
-          { menuList.map(item => (
+          {menuList.map(item => (
             <li
               key={item.id.toString()}
               style={{ top: 30 * (navMenu.length - item.id) }}
@@ -76,7 +76,7 @@ function PageNav() {
                 </span>
               </Tooltip>
             </li>
-          )) }
+          ))}
         </Scrollspy>
       </nav>
       <Tooltip

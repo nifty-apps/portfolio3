@@ -14,67 +14,74 @@ import useStyle from './gallery-style';
 
 const portfolio = [
   {
-    img: imgAPI.unisex[6],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.portfolio[2],
+    title: 'mpairtech - Manual login',
+    link: 'https://mpairtech.netlify.app/',
     size: 'short',
     category: 'cat1'
   },
   {
-    img: imgAPI.unisex[7],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.portfolio[1],
+    title: 'Rick & Morty Episodes',
+    link: 'https://rick-and-morty-byopu.netlify.app/',
+    size: 'long',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.portfolio[0],
+    title: 'Botiquin-Landing page',
+    link: 'https://boutiquin.netlify.app/',
+    size: 'long',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.portfolio[3],
+    title: 'Heros Recipe - Recipe finding site',
+    link: 'https://project-1-34a32.web.app/',
     size: 'long',
     category: 'cat2'
   },
   {
-    img: imgAPI.unisex[8],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.portfolio[5],
+    title: 'Craftopia - Summercamp website',
+    link: 'https://craftopia-2b729.web.app/',
+    size: 'short',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.portfolio[6],
+    title: 'Campus Reserve - Book your desired campus',
+    link: 'https://campureserve.web.app/',
+    size: 'short',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.portfolio[4],
+    title: 'Tiny Zoo - Toy store website',
+    link: 'https://tinyzoo-aec49.web.app/',
+    size: 'long',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.portfolio[7],
+    title: 'Quize Hero - Quizing website',
+    link: 'https://chimerical-duckanoo-3318f5.netlify.app/',
     size: 'short',
     category: 'cat3'
   },
   {
-    img: imgAPI.unisex[9],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.unisex[10],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.unisex[11],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.portfolio[8],
+    title: 'Area Calculator - Calculate the shape area',
+    link: 'https://exquisite-florentine-1551bd.netlify.app/',
     size: 'short',
     category: 'cat3'
   },
   {
-    img: imgAPI.unisex[12],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.portfolio[9],
+    title: 'XYZ Engine - retrive data from xml file',
+    link: 'https://superlative-praline-2301ba.netlify.app/',
     size: 'short',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.unisex[14],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.unisex[13],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
+    category: 'cat3'
   },
 ];
 
@@ -160,31 +167,19 @@ function Gallery() {
             onClick={() => filterChildren('cat1')}
             className={filter === 'cat1' ? classes.selected : ''}
           >
-            Category 1
+            Front-End
           </Button>
           <Button
             onClick={() => filterChildren('cat2')}
             className={filter === 'cat2' ? classes.selected : ''}
           >
-            Category 2
+            Full-Stack
           </Button>
           <Button
             onClick={() => filterChildren('cat3')}
             className={filter === 'cat3' ? classes.selected : ''}
           >
-            Category 3
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat4')}
-            className={filter === 'cat4' ? classes.selected : ''}
-          >
-            Category 4
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat5')}
-            className={filter === 'cat5' ? classes.selected : ''}
-          >
-            Category 5
+            Javascript
           </Button>
         </div>
         {!isMobile ? (

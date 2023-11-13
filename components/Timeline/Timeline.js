@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
-import LinearProgress from '@mui/material/LinearProgress';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
@@ -20,13 +19,6 @@ function Timeline() {
 
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
-  const [play, setPlay] = useState(false);
-
-  const handlePlay = visible => {
-    if (visible.inViewport) {
-      setTimeout(() => { setPlay(true); }, 500);
-    }
-  };
 
   return (
     <div className={classes.root}>
@@ -54,9 +46,9 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Creative Director</Typography>
-                        <Typography gutterBottom>at Fourth Company</Typography>
-                        <Typography className={classes.time}>2015 - Present</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>React JS Developer (Intern)</Typography>
+                        <Typography gutterBottom>Nifty IT Sollutions</Typography>
+                        <Typography className={classes.time}>September 2023 - Present</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -69,9 +61,9 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Senior UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Third Company</Typography>
-                        <Typography className={classes.time}>2013 - 2015</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>WEB Instructor</Typography>
+                        <Typography gutterBottom>Institute of Freelancing</Typography>
+                        <Typography className={classes.time}>June 2023 - Present</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -84,9 +76,13 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Second Company</Typography>
-                        <Typography className={classes.time}>2012 - 2013</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>
+                          Teaching Assistant
+                          <br />
+                          (Computer Security)
+                        </Typography>
+                        <Typography gutterBottom>International Islamic University, Chittagong</Typography>
+                        <Typography className={classes.time}>Autumn-2023</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -99,9 +95,13 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at First Company</Typography>
-                        <Typography className={classes.time}>2009 - 2011</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>
+                          Teaching Assistant
+                          <br />
+                          (Web Tools & Technology)
+                        </Typography>
+                        <Typography gutterBottom>International Islamic University, Chittagong</Typography>
+                        <Typography className={classes.time}>Spring-2022</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -109,90 +109,84 @@ function Timeline() {
               </div>
             </Grid>
             <Grid item sm={6} xs={12}>
-              <div className={classes.progress}>
+              <div className={classes.history}>
                 <Typography variant="h5" className={cx(classes.title, text.subtitle)}>
-                  {t('unisex-landing.timeline_skill')}
+                  {t('Education')}
                 </Typography>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="fadeIn"
-                  delay={400}
-                  duration={0.3}
-                  afterAnimatedIn={handlePlay}
-                >
-                  <ul>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-color-wand" />
-                        <Typography variant="h6" className={text.subtitle2}>UI Interface Design</Typography>
+                <ul>
+                  <li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInLeftShort"
+                      delay={200}
+                      duration={0.3}
+                    >
+                      <div>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>BSc in CSE</Typography>
+                        <Typography gutterBottom>International Islamic University, Chittagong</Typography>
+                        <Typography className={classes.time}>2018-2022</Typography>
                       </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 80 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-logo-dribbble" />
-                        <Typography variant="h6" className={text.subtitle2}>Icon Design</Typography>
+                    </ScrollAnimation>
+                  </li>
+                  <li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInLeftShort"
+                      delay={200}
+                      duration={0.3}
+                    >
+                      <div>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>HSC Science</Typography>
+                        <Typography gutterBottom>Chittagong Government College</Typography>
+                        <Typography className={classes.time}>2015-2017</Typography>
                       </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 70 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-globe" />
-                        <Typography variant="h6" className={text.subtitle2}>HTML Prototyping</Typography>
+                    </ScrollAnimation>
+                  </li>
+                </ul>
+                <Typography variant="h5" className={cx(classes.title2, text.subtitle)}>
+                  {t('Contact')}
+                </Typography>
+                <ul>
+                  <li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInLeftShort"
+                      delay={200}
+                      duration={0.3}
+                    >
+                      <div>
+                        <Typography gutterBottom>Whatsapp</Typography>
+                        <Typography className={classes.time}>+880 152 1227 899</Typography>
                       </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 60 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-camera" />
-                        <Typography variant="h6" className={text.subtitle2}>Photo Editing</Typography>
+                    </ScrollAnimation>
+                  </li>
+                  <li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInLeftShort"
+                      delay={200}
+                      duration={0.3}
+                    >
+                      <div>
+                        <Typography gutterBottom>Email</Typography>
+                        <Typography className={classes.time}>opuctg440@gmail.com</Typography>
                       </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 90 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-snow" />
-                        <Typography variant="h6" className={text.subtitle2}>Graphic Illustrations</Typography>
+                    </ScrollAnimation>
+                  </li>
+                  <li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInLeftShort"
+                      delay={200}
+                      duration={0.3}
+                    >
+                      <div>
+                        <Typography gutterBottom>Address</Typography>
+                        <Typography className={classes.time}>Chittagong, Bangladesh</Typography>
                       </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 80 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                  </ul>
-                </ScrollAnimation>
+                    </ScrollAnimation>
+                  </li>
+                </ul>
               </div>
             </Grid>
           </Grid>

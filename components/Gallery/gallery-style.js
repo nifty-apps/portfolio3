@@ -8,8 +8,8 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
   selected: {},
   filter: {
     position: 'relative',
-    zIndex: 20,
     display: 'flex',
+    justifyContent: 'center',
     overflow: 'auto',
     width: '100%',
     padding: theme.spacing(3, 0),
@@ -33,10 +33,10 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
   },
   massonry: {
     columns: `${3} 300px`,
-    columnGap: theme.spacing(4),
+    columnGap: theme.spacing(3),
   },
   item: {
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(3),
     breakInside: 'avoid',
     opacity: 1,
     position: 'relative',

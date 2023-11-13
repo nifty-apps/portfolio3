@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import HALO from 'vanta/dist/vanta.halo.min';
+import BIRDS from 'vanta/dist/vanta.birds.min';
 import useStyles from './hero-style';
 
 function Animation() {
@@ -11,20 +11,21 @@ function Animation() {
   useEffect(() => {
     if (!vantaEffect) {
       setTimeout(() => {
-        setVantaEffect(HALO({
+        setVantaEffect(BIRDS({
           el: myRef.current,
-          mouseControls: true,
+          mouseControls: false,
           touchControls: true,
           gyroControls: false,
-          minHeight: 400.00,
-          minWidth: 400.00,
-          size: 3.00
-        }))
-      }, 2000)
+          minHeight: 500,
+          minWidth: 200,
+          scale: 1,
+          scaleMobile: 1
+        }));
+      }, 2000);
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
-    }
+      if (vantaEffect) vantaEffect.destroy();
+    };
   }, [vantaEffect]);
 
   return (

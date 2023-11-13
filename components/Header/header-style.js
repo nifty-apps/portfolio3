@@ -170,7 +170,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
     position: 'absolute',
     fontWeight: theme.typography.fontWeightBold,
     textTransform: 'uppercase',
-    color: theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.primary.light,
     top: 0,
     left: '-50%',
     fontSize: 18,

@@ -12,7 +12,6 @@ const footerStyles = makeStyles({ uniqId: 'footer' })(theme => ({
       marginTop: theme.spacing(5)
     },
     '& img': {
-      filter: 'grayscale(1) contrast(0.5) brightness(1.5)',
       width: 80,
       marginBottom: theme.spacing(2)
     },

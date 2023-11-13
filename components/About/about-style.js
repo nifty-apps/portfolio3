@@ -1,5 +1,4 @@
 import { makeStyles } from 'tss-react/mui';
-const gold = '#D6BD96';
 
 const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
   root: {
@@ -60,7 +59,7 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
   },
   item: {
     textAlign: 'center',
-    color: gold,
+    color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     margin: theme.spacing(2),
     [theme.breakpoints.up('md')]: {
       margin: theme.spacing(4),
@@ -96,7 +95,7 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
   photo: {
     position: 'relative',
     marginTop: -140,
-    background: theme.palette.common.white,
+    background: theme.palette.common.black,
     width: 270,
     height: 335,
     zIndex: 1,

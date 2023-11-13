@@ -14,27 +14,27 @@ const services = [
   {
     icon: 'ion-ios-color-wand',
     name: 'UI Interface Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  },
-  {
-    icon: 'ion-logo-dribbble',
-    name: 'Icon Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    desc: 'Design your website in figma'
   },
   {
     icon: 'ion-ios-globe',
-    name: 'HTML Prototyping',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    name: 'MERN website',
+    desc: 'Make a Full-Stack Website'
   },
   {
     icon: 'ion-ios-camera',
     name: 'Photo Editing',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    desc: 'Photo Editing'
   },
   {
-    icon: 'ion-ios-snow',
-    name: 'Graphic Illustrations',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-ios-build',
+    name: 'Debug',
+    desc: 'Fix your websites problem'
+  },
+  {
+    icon: 'ion-logo-wordpress',
+    name: 'Wordpress',
+    desc: 'Create a normal wordpress website'
   }
 ];
 

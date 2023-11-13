@@ -13,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from '@mui/material/Fade';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/unisex-logo.svg';
+import logo from '~/public/images/AK_logo.png';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import routeLink from '~/public/text/link';
@@ -74,7 +74,7 @@ function Header(props) {
     createData(navMenu[2], '#' + navMenu[2]),
     createData(navMenu[3], '#' + navMenu[3], -40),
     createData(navMenu[4], '#' + navMenu[4], -40),
-    createData(navMenu[5], '#' + navMenu[5], -40),
+    // createData(navMenu[5], '#' + navMenu[5], -40),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -181,32 +181,40 @@ function Header(props) {
                         {brand.unisex.title}
                       </Typography>
                     </div>
-                    <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
+                    <Button variant="contained" color="primary" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                     <div className={classes.socmed}>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-facebook', classes.fb)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-facebook', classes.fb)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-instagram', classes.ig)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-instagram', classes.ig)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-twitter', classes.tw)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-twitter', classes.tw)} />
+                        </Button>
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-linkedin', classes.in)} />
+                        <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                          <i className={cx('ion-logo-linkedin', classes.in)} />
+                        </Button>
                       </IconButton>
                     </div>
                     <div className={classes.contact}>
                       <Typography className={text.paragraph}>
                         {t('unisex-landing.footer_contact')}
                         <br />
-                        +12 345 678 90
+                        +880 152 1227 899
                       </Typography>
                       <Divider className={classes.divider} />
                       <Typography className={text.paragraph}>
                         {t('unisex-landing.footer_hello')}
                         <br />
-                        jenadoe.skype
+                        opuctg440@gmail.com
                       </Typography>
                     </div>
                   </div>

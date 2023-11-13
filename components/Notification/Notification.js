@@ -38,8 +38,8 @@ function Notification() {
           action: classes.action
         }}
         action={(
-          <Button variant="contained" color="secondary" className={classes.button} onClick={handleClose}>
-            {t('accept')}
+          <Button variant="contained" color="info" className={classes.button} onClick={handleClose}>
+            {t('OK')}
           </Button>
         )}
       />

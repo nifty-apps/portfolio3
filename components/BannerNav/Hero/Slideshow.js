@@ -10,7 +10,7 @@ function Slideshow() {
     dots: false,
     infinite: true,
     speed: 700,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     autoplay: true,
     slidesToShow: 1,
     arrows: false,

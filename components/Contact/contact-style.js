@@ -1,4 +1,5 @@
 import { makeStyles } from 'tss-react/mui';
+import { alpha } from '@mui/material/styles';
 
 const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   formWrap: {
@@ -6,16 +7,15 @@ const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   },
   formBox: {
     padding: theme.spacing(2),
+    background: theme.palette.mode === 'dark' ? `linear-gradient(120deg, ${alpha(theme.palette.primary.main, 0.7)}, ${alpha(theme.palette.secondary.main, 0.7)})` : `linear-gradient(120deg, ${alpha(theme.palette.primary.main, 0.9)}, ${alpha(theme.palette.secondary.main, 0.9)})`,
+    backdropFilter: 'saturate(180%) blur(10px)',
     [theme.breakpoints.up('sm')]: {
       padding: theme.spacing(7),
     },
+    color: theme.palette.common.white
   },
   title: {
     textAlign: 'left',
-    '& span': {
-      display: 'block',
-      color: theme.palette.primary.main
-    },
     [theme.breakpoints.down('sm')]: {
       top: theme.spacing(3),
       position: 'relative'
@@ -28,8 +28,9 @@ const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
       marginBottom: theme.spacing(3)
     },
     '& label.Mui-focused': {
-      color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.main
-    }
+      color: theme.palette.primary.light
+    },
+    color: theme.palette.common.white
   },
   form: {
     textAlign: 'left',

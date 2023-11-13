@@ -8,7 +8,7 @@ const counterStyles = makeStyles({ uniqId: 'counter' })(theme => ({
     background: `linear-gradient(120deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
     padding: theme.spacing(5, 0),
     '&:before': {
-      background: theme.palette.mode === 'dark' ? theme.palette.background.default : '#EEEEEE',
+      background: theme.palette.background.default,
       content: '""',
       borderRadius: theme.rounded.big,
       position: 'absolute',

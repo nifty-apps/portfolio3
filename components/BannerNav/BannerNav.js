@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
+import { TypeAnimation } from 'react-type-animation';
 import SideNavigation from '../SideNavigation';
 import SideNavigationIcon from '../SideNavigation/SideNavigationIcon';
 import brand from '~/public/text/brand';
@@ -21,7 +22,7 @@ import useStyles from './banner-style';
 function BannerNav(props) {
   const { classes: text } = useText();
   const { classes } = useStyles();
-  const [bannerHero] = useState('animation');
+  const [bannerHero] = useState('animation-slide');
   const isTablet = useMediaQuery(theme => theme.breakpoints.down('lg'));
   const isMobile = useMediaQuery(theme => theme.breakpoints.down('md'));
 
@@ -46,11 +47,11 @@ function BannerNav(props) {
           <div className={classes.banner}>
             <div className={classes.cover}>
               <div className={classes.figure}>
-                { bannerHero === 'image' && <div className={classes.img} style={{ backgroundImage: `url(${brand.unisex.cover})` }} /> }
-                { bannerHero === 'video' && <VideoHero /> }
-                { bannerHero === 'animation' && <Animation /> }
-                { bannerHero === 'animation-slide' && <AnimationSlideshow /> }
-                { bannerHero === 'slideshow' && <Slideshow /> }
+                {bannerHero === 'image' && <div className={classes.img} style={{ backgroundImage: `url(${brand.unisex.cover})` }} />}
+                {bannerHero === 'video' && <VideoHero />}
+                {bannerHero === 'animation' && <Animation />}
+                {bannerHero === 'animation-slide' && <AnimationSlideshow />}
+                {bannerHero === 'slideshow' && <Slideshow />}
               </div>
             </div>
             {!isTablet && (
@@ -59,14 +60,26 @@ function BannerNav(props) {
               </div>
             )}
             <div className={classes.text}>
-              <Typography variant="h4" className={text.title2}>
-                {t('unisex-landing.banner_greeting')}
-                ,
-              </Typography>
               <Typography variant="h2" className={text.title}>
-                {t('unisex-landing.banner_me')}
-                &nbsp;James,&nbsp;
-                {brand.unisex.title}
+                {brand.unisex.name}
+              </Typography>
+              <Typography variant="h4" className={text.title2}>
+                a
+                <TypeAnimation
+                  sequence={[
+                    ' Web Developer',
+                    2000,
+                    ' MERN Stack Developer',
+                    1800,
+                    ' Software Developer',
+                    1800,
+                    ' Front-End Developer',
+                    1800,
+                  ]}
+                  speed={10}
+                  style={{}}
+                  repeat={Infinity}
+                />
               </Typography>
               {!isMobile && (
                 <Fragment>
@@ -74,18 +87,26 @@ function BannerNav(props) {
                     {t('unisex-landing.banner_desc')}
                   </Typography>
                   <div className={classes.socmed}>
-                    <Button variant="outlined" className={classes.download} component="a">Download CV</Button>
+                    <Button variant="outlined" className={classes.download} href="https://drive.google.com/file/d/1wAEVBSjZ8Sqit7KACgozd9GyhXdKbLDN/view?usp=sharing" target="_blank">Download CV</Button>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-facebook" />
+                      <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                        <i className="ion-logo-facebook" />
+                      </Button>
                     </IconButton>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-twitter" />
+                      <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                        <i className="ion-logo-twitter" />
+                      </Button>
                     </IconButton>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-instagram" />
+                      <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                        <i className="ion-logo-instagram" />
+                      </Button>
                     </IconButton>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-linkedin" />
+                      <Button href="https://www.linkedin.com/in/akther-uz-zaman-852827278/" target="_blank">
+                        <i className="ion-logo-linkedin" />
+                      </Button>
                     </IconButton>
                   </div>
                 </Fragment>
