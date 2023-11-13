@@ -15,70 +15,70 @@ import useStyle from './gallery-style';
 const portfolio = [
   {
     img: imgAPI.portfolio[2],
-    title: 'Aenean facilisis vitae purus',
+    title: 'mpairtech - Manual login',
     link: 'https://mpairtech.netlify.app/',
     size: 'short',
     category: 'cat1'
   },
   {
     img: imgAPI.portfolio[1],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Rick & Morty Episodes',
     link: 'https://rick-and-morty-byopu.netlify.app/',
     size: 'long',
     category: 'cat1'
   },
   {
     img: imgAPI.portfolio[0],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Botiquin-Landing page',
     link: 'https://boutiquin.netlify.app/',
     size: 'long',
     category: 'cat1'
   },
   {
     img: imgAPI.portfolio[3],
-    title: 'Heros recipe',
+    title: 'Heros Recipe - Recipe finding site',
     link: 'https://project-1-34a32.web.app/',
     size: 'long',
     category: 'cat2'
   },
   {
     img: imgAPI.portfolio[5],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Craftopia - Summercamp website',
     link: 'https://craftopia-2b729.web.app/',
     size: 'short',
     category: 'cat2'
   },
   {
     img: imgAPI.portfolio[6],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Campus Reserve - Book your desired campus',
     link: 'https://campureserve.web.app/',
     size: 'short',
     category: 'cat2'
   },
   {
     img: imgAPI.portfolio[4],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Tiny Zoo - Toy store website',
     link: 'https://tinyzoo-aec49.web.app/',
     size: 'long',
     category: 'cat2'
   },
   {
     img: imgAPI.portfolio[7],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Quize Hero - Quizing website',
     link: 'https://chimerical-duckanoo-3318f5.netlify.app/',
     size: 'short',
     category: 'cat3'
   },
   {
     img: imgAPI.portfolio[8],
-    title: 'Aenean facilisis vitae purus',
+    title: 'Area Calculator - Calculate the shape area',
     link: 'https://exquisite-florentine-1551bd.netlify.app/',
     size: 'short',
     category: 'cat3'
   },
   {
     img: imgAPI.portfolio[9],
-    title: 'Aenean facilisis vitae purus',
+    title: 'XYZ Engine - retrive data from xml file',
     link: 'https://superlative-praline-2301ba.netlify.app/',
     size: 'short',
     category: 'cat3'
