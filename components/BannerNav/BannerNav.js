@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
+import { TypeAnimation } from 'react-type-animation';
 import SideNavigation from '../SideNavigation';
 import SideNavigationIcon from '../SideNavigation/SideNavigationIcon';
 import brand from '~/public/text/brand';
@@ -63,7 +64,22 @@ function BannerNav(props) {
                 {brand.unisex.name}
               </Typography>
               <Typography variant="h4" className={text.title2}>
-                {brand.unisex.title}
+                a
+                <TypeAnimation
+                  sequence={[
+                    ' Web Developer',
+                    2000,
+                    ' MERN Stack Developer',
+                    1800,
+                    ' Software Developer',
+                    1800,
+                    ' Front-End Developer',
+                    1800,
+                  ]}
+                  speed={10}
+                  style={{}}
+                  repeat={Infinity}
+                />
               </Typography>
               {!isMobile && (
                 <Fragment>
